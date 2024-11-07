@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogParser", "LogParser\LogParser.csproj", "{6203CC65-4794-46F8-A13F-C90A37D39E29}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6203CC65-4794-46F8-A13F-C90A37D39E29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6203CC65-4794-46F8-A13F-C90A37D39E29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6203CC65-4794-46F8-A13F-C90A37D39E29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6203CC65-4794-46F8-A13F-C90A37D39E29}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
