@@ -8,9 +8,13 @@ public class FolderItem(string name) : IItem
     
     private readonly Dictionary<string, IItem> _items = new();
 
+    private double _size;
+    private bool _isSizeCalculated;
+
     public void AddItem(IItem item)
     {
         _items[item.Name] = item;
+        _isSizeCalculated = false;
     }
 
     public IItem? GetItem(string name)
@@ -21,6 +25,9 @@ public class FolderItem(string name) : IItem
 
     public double GetSize()
     {
-        return Items.Sum(i => i.GetSize());
+        if(_isSizeCalculated)
+            return _size;
+        
+        return _size = Items.Sum(i => i.GetSize());
     }
 }

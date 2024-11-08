@@ -56,7 +56,7 @@ void PrintItem(StreamWriter stream, IItem item, int depth)
     
     if (item is not FolderItem folder) return;
     
-    foreach (var child in folder.Items)
+    foreach (var child in folder.Items.OrderByDescending(k => k.GetSize()))
     {
         PrintItem(stream, child, depth + 1);
     }
